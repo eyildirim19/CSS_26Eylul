@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    
+    <style>
+        /*element seçiciler genelde ortak stiller vermek için kullanılır*/
+        p{
+            color:red;
+        }
+        /* id seçici*/
+        #b1{
+            color:#81312e;
+            border-bottom-color:#81312e;
+            border-bottom-style:solid;
+            border-width:1px;
+        }
+        #b2{
+            color:#ff6a00;
+            border-bottom:1px solid #ff6a00;
+        }
+        #b3{
+            color:pink;
+            border-bottom:1px solid pink;
+        }
+
+        /* class seçici => ortak stil uygulamak için kullanılır => sık kullanılan seçici türüdür... */
+        .yazi{
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>Paragraf 1</p>
+    <p class="yazi">Paragraf 2</p>
+    <p>Paragraf 3</p>
+
+    <b id="b1" class="yazi">Metin 1</b>
+    <b id="b2">Metin 2</b>
+    <b id="b3" class="yazi">Metin 3</b>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿body {
+    margin:0px; /*bütün kenarlardan boşluğu 0px verdik...*/
+}
+
+span {
+    font-size: 15px;
+    font-family: Verdana;
+    font-style: italic;
+    font-weight: bold;
+}
+#spn1{
+    color:#ff6a00;
+}
+
+#spn2{
+    color:#808080;
+   
+}
+#header{
+    height:50px;
+    background-color:#cfcfcf;
+}
+
+.container{
+    width:700px;
+    height:50px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#logo{
+}
+#txtSearch{
+    float:right;
+    border:none;
+    height:25px;
+    width:250px;
+    margin-top:10px;
+    color:#808080;
+    font-size:14px;
+    font-family:Corbel;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#txtSearch:focus{
+    width:300PX;
+    outline:none;
+}
