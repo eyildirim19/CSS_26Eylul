@@ -1,5 +1,5 @@
 ﻿body {
-    margin:0px; /*bütün kenarlardan boşluğu 0px verdik...*/
+    margin: 0px; /*bütün kenarlardan boşluğu 0px verdik...*/
 }
 
 span {
@@ -8,42 +8,165 @@ span {
     font-style: italic;
     font-weight: bold;
 }
-#spn1{
-    color:#ff6a00;
+
+#spn1 {
+    color: #1F62AE;
+    text-decoration: underline;
 }
 
-#spn2{
-    color:#808080;
-   
-}
-#header{
-    height:50px;
-    background-color:#cfcfcf;
+#spn2 {
+    color: #347DC6;
 }
 
-.container{
-    width:700px;
-    height:50px;
-    margin-left:auto;
-    margin-right:auto;
+#header {
+    height: 50px;
+    background-color: #cfcfcf;
 }
 
-#logo{
-}
-#txtSearch{
-    float:right;
-    border:none;
-    height:25px;
-    width:250px;
-    margin-top:10px;
-    color:#808080;
-    font-size:14px;
-    font-family:Corbel;
-    padding-left:10px;
-    padding-right:10px;
+.container {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#txtSearch:focus{
-    width:300PX;
-    outline:none;
+#logo {
+}
+
+#txtSearch {
+    float: right;
+    border: none;
+    height: 25px;
+    width: 250px;
+    margin-top: 10px;
+    color: #808080;
+    font-size: 14px;
+    font-family: Corbel;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    #txtSearch:focus {
+        width: 300PX;
+        outline: none;
+    }
+
+#menu {
+    /*margin-top: 10px;
+    margin-bottom:10px;*/
+    margin: 10px 0px;
+}
+    /*child seçici*/
+    #menu ul {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+        #menu ul li {
+            margin-bottom: 1px;
+        }
+
+            #menu ul li a {
+                color: white;
+                display: block;
+                background-color: #1F62AE;
+                text-decoration: none;
+                font-size: 13px;
+                padding: 5px 0px;
+            }
+
+                #menu ul li a:hover {
+                    background-color: #347DC6;
+                    color: #032348;
+                    padding-left: 10px;
+                }
+
+#slider {
+    height: 300px;
+    border: 1px solid #1F62AE;
+    margin-bottom: 10px;
+    position:relative; /*relative absolute elementlerin referans noktasını belirlemek için kullanılır..*/
+
+
+    /*background-image:url(prev.png);
+    background-repeat:no-repeat;
+    background-size:160px;*/
+}
+
+
+.ortak {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#solust {
+    background-color: red;
+    top: 0px;
+    left: 0px;
+}
+
+#sagust {
+    background-color: pink;
+    top: 0px;
+    right: 0px;
+}
+
+#solalt {
+    background-color: purple;
+    bottom: 0px;
+    left: 0px;
+}
+
+#sagalt {
+    background-color: brown;
+    bottom: 0px;
+    right: 0px;
+}
+
+.boxcontainer {
+    margin-top: 10px;
+    position:relative;
+}
+
+.action {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:50px;
+    cursor:pointer;
+}
+
+#prev {
+    background-image: url('prev.png');
+    left:-50px;
+}
+
+#next {
+    background-image: url('next.png');
+    right:-50px;
+}
+
+.box {
+    /*
+        not : padding değeri genişlik ve yüksekliğe etki eder...
+
+    */
+    width: 162px;
+    background-color: red;
+    height: 130px;
+    display: inline-block;
+    background-color: #f1efef;
+    padding: 10px;
+    border: 1px solid #808080;
+}
+
+.boxinner {
+    width: 164px;
+    height: 130px;
+    background-color: white;
+}
+
+.box:hover {
+    background-color: #347DC6;
 }
